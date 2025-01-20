@@ -16,12 +16,6 @@
         <!-- Existing Programs and Credentials -->
         <template for:each={programsWithCredentials} for:item="programWithCreds">
             <div key={programWithCreds.id}>
-                <!-- Header for Program -->
-                <h2 class="slds-text-heading_small slds-m-top_medium">
-                    {programWithCreds.program === 'Xfinity' ? 'Xfinity' : programWithCreds.program}
-                </h2>
-
-                <!-- Render Default Credential Component -->
                 <c-poe_contact-credential
                     credential-information={programWithCreds}>
                 </c-poe_contact-credential>
